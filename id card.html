@@ -7,72 +7,72 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #e0f7fa; /* Light cyan background */
+      background-color: #e0f7fa; 
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh; /* Full viewport height */
+      height: 100vh;
       margin: 0;
     }
 
-    /* Styling for the ID card */
+   
     #idCard {
       width: 320px;
       padding: 20px;
-      border: 3px solid #00796b; /* Dark green border */
+      border: 3px solid #00796b; 
       text-align: center;
-      background: linear-gradient(135deg, #c9e6f4, #80deea); /* Gradient background */
+      background: linear-gradient(135deg, #c9e6f4, #80deea);
       border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Strong shadow for depth */
-      transition: transform 0.2s; /* Smooth transition effect */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+      transition: transform 0.2s;
     }
 
-    /* Hover effect for the ID card */
+   
     #idCard:hover {
-      transform: scale(1.05); /* Slightly enlarge the card on hover */
+      transform: scale(1.05);
     }
 
-    /* Styling for the image inside the card */
+  
     #idImage {
       width: 120px;
       height: 120px;
       border-radius: 50%;
       margin-bottom: 15px;
-      border: 4px solid #004d40; /* Darker green border for the image */
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Shadow for the image */
+      border: 4px solid #004d40; 
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
     }
 
-    /* Name and text styles */
+    
     #idCard h3 {
-      color: #004d40; /* Dark green for name */
-      font-size: 2em; /* Increased font size for the name */
+      color: #004d40;
+      font-size: 2em; 
       margin: 10px 0;
-      font-weight: bold; /* Bold for emphasis */
-      text-transform: uppercase; /* Uppercase for styling */
-      letter-spacing: 1px; /* Slight spacing between letters */
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+      font-weight: bold; 
+      text-transform: uppercase; 
+      letter-spacing: 1px; 
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
     }
 
     #idCard p {
-      color: #00796b; /* Greenish color for text */
-      font-size: 1.2em; /* Increased font size for paragraphs */
+      color: #00796b;
+      font-size: 1.2em; 
       margin: 5px 0;
-      line-height: 1.5; /* Improved line spacing */
-      font-style: italic; /* Italic for a stylish look */
+      line-height: 1.5; 
+      font-style: italic;
     }
 
-    /* Styling for the footer */
+   
     #footer {
       margin-top: 15px;
       font-size: 0.9em;
       color: #555;
-      font-style: italic; /* Italic style for footer */
+      font-style: italic;
     }
 
-    /* Responsive adjustments */
+ 
     @media (max-width: 400px) {
       #idCard {
-        width: 90%; /* Full width on small screens */
+        width: 90%;
       }
     }
   </style>
@@ -80,39 +80,39 @@
 <body>
 
   <script>
-    // Function to generate the ID card
+    
     function generateIDCard() {
-      // Create ID card container
+    
       const idCard = document.createElement('div');
       idCard.id = 'idCard';
 
-      // Create Image element
+      
       const img = document.createElement('img');
       img.id = 'idImage';
-      img.src = './photoes/itachi-with-intense-gaze-naruto-desktop-wallpaper.jpg';  // Placeholder image
+      img.src = './photoes/itachi-with-intense-gaze-naruto-desktop-wallpaper.jpg'; 
 
-      // Create name element
+      
       const name = document.createElement('h3');
       name.textContent = 'John Doe';
 
-      // Create designation element
+   
       const designation = document.createElement('p');
       designation.textContent = 'Software Engineer';
 
-      // Create company element
+  
       const company = document.createElement('p');
       company.textContent = 'Tech Solutions Inc.';
 
-      // Create ID number element
+     
       const idNumber = document.createElement('p');
       idNumber.textContent = 'ID: 12345678';
 
-      // Create footer element for additional information
+      
       const footer = document.createElement('div');
       footer.id = 'footer';
       footer.textContent = 'Valid Until: 12/31/2025';
 
-      // Append elements to ID card container
+      
       idCard.appendChild(img);
       idCard.appendChild(name);
       idCard.appendChild(designation);
@@ -120,11 +120,11 @@
       idCard.appendChild(idNumber);
       idCard.appendChild(footer);
 
-      // Append the ID card to the body
+    
       document.body.appendChild(idCard);
     }
 
-    // Call the function to generate the ID card when the page loads
+   
     window.onload = generateIDCard;
   </script>
 </body>
